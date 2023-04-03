@@ -20,6 +20,9 @@ export default function HankoAuth({ hankoApi }: { hankoApi: string }) {
     // register the component
     // see: https://github.com/teamhanko/hanko/blob/main/frontend/elements/README.md#script
     register({ shadow: true })
+      .then(()=>{
+        navigate('/profile')
+      })
       .catch((error) => {
         // handle error
       });
