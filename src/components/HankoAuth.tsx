@@ -7,7 +7,7 @@ export default function HankoAuth({ hankoApi }: { hankoApi: string }) {
 
   const redirectAfterLogin = useCallback(() => {
     // successfully logged in, redirect to a page in your application
-    navigate("...", { replace: true });
+    navigate("/profile", { replace: true });
   }, [navigate]);
 
   useEffect(() => {
@@ -21,7 +21,6 @@ export default function HankoAuth({ hankoApi }: { hankoApi: string }) {
     // see: https://github.com/teamhanko/hanko/blob/main/frontend/elements/README.md#script
     register({ shadow: true })
       .then(()=>{
-        navigate('/profile')
       })
       .catch((error) => {
         // handle error
