@@ -3,7 +3,7 @@ import HankoAuth from './components/HankoAuth'
 import HankoProfile from './components/HankoProfile'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-const hankoKey = import.meta.env.VITE_HANKO_KEY;
+const hankoKey = "https://fea5acbc-8e16-4375-8c13-bc12eec89805.hanko.io";
 
 function App() {
   return (
